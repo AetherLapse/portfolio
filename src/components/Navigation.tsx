@@ -54,6 +54,12 @@ const Navigation = () => {
                 <a href="https://linkedin.com/in/vinayak-raj-seo" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="w-5 h-5 text-muted-foreground hover:text-secondary transition-colors" />
                 </a>
+
+                <a
+  href="https://wa.me/917983796831?text=Hello,%20I’m%20interested%20in%20your%20resume%20and%20would%20like%20to%20know%20more%20about%20your%20skills%20and%20experience."
+  target="_blank"
+  rel="noopener noreferrer"
+>
                 
                 <Button 
                   variant="outline"
@@ -61,6 +67,7 @@ const Navigation = () => {
                 >
                   Hire Me
                 </Button>
+                </a>
               </div>
             </div>
 
@@ -103,10 +110,15 @@ const Navigation = () => {
               <Linkedin className="w-6 h-6 text-muted-foreground hover:text-secondary transition-colors" />
             </a>
           </div>
-          
+          <a
+  href="https://wa.me/917983796831?text=Hello,%20I’m%20interested%20in%20your%20resume%20and%20would%20like%20to%20know%20more%20about%20your%20skills%20and%20experience."
+  target="_blank"
+  rel="noopener noreferrer"
+>
             <Button className="bg-primary hover:bg-primary/90 text-primary-foreground mt-8">
               Hire Me
             </Button>
+            </a>
         </div>
       </div>
     </>
