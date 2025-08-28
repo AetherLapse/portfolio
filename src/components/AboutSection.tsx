@@ -118,7 +118,7 @@ const AboutSection = () => {
                 <div className="w-full h-full rounded-full bg-background p-2">
                   <img 
                     src={profileImage}
-                    alt="Milad - Web Developer"
+                    alt="Vinayak - Web Developer"
                     className="w-full h-full object-cover rounded-full"
                   />
                 </div>

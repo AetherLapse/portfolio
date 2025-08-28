@@ -63,12 +63,12 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: Github,
-      href: "https://github.com",
+      href: "https://github.com/AetherLapse",
       label: "GitHub"
     },
     {
       icon: Linkedin,
-      href: "https://linkedin.com",
+      href: "https://linkedin.com/in/vinayak-raj-seo",
       label: "LinkedIn"
     }
   ];
@@ -88,7 +88,7 @@ const Footer = () => {
           {/* Logo & Description */}
           <div className="text-center md:text-left">
             <div className="text-2xl font-bold cyber-text mb-2">
-              Milad Code
+              Vinayak Code
             </div>
             <p className="text-sm text-muted-foreground">
               Crafting digital experiences with passion and precision.
@@ -129,7 +129,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="text-sm text-muted-foreground flex items-center justify-center space-x-1">
-            <span>© {currentYear} Milad Abdi. Made with</span>
+            <span>© {currentYear} Vinayak Abdi. Made with</span>
             <Heart className="w-4 h-4 text-red-500 animate-pulse" />
             <span>and lots of coffee.</span>
           </p>

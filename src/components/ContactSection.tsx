@@ -75,8 +75,8 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "hello@milad.dev",
-      href: "mailto:hello@milad.dev"
+      value: "hello@Vinayak.dev",
+      href: "mailto:hello@Vinayak.dev"
     },
     {
       icon: Phone,
@@ -96,12 +96,12 @@ const ContactSection = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com"
+      href: "https://github.com/AetherLapse"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com"
+      href: "https://linkedin.com/in/vinayak-raj-seo"
     }
   ];
 

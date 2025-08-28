@@ -48,10 +48,10 @@ const Navigation = () => {
               ))}
               
               <div className="flex items-center space-x-4 ml-6">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/AetherLapse" target="_blank" rel="noopener noreferrer">
                   <Github className="w-5 h-5 text-muted-foreground hover:text-primary transition-colors" />
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://linkedin.com/in/vinayak-raj-seo" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="w-5 h-5 text-muted-foreground hover:text-secondary transition-colors" />
                 </a>
                 
@@ -96,10 +96,10 @@ const Navigation = () => {
           ))}
           
           <div className="flex items-center space-x-6 pt-8">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/AetherLapse" target="_blank" rel="noopener noreferrer">
               <Github className="w-6 h-6 text-muted-foreground hover:text-primary transition-colors" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://linkedin.com/in/vinayak-raj-seo" target="_blank" rel="noopener noreferrer">
               <Linkedin className="w-6 h-6 text-muted-foreground hover:text-secondary transition-colors" />
             </a>
           </div>
