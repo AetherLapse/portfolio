@@ -123,18 +123,20 @@ const HeroSection = () => {
           </p>
           
           <div ref={ctaRef} className="flex flex-col sm:flex-row items-center justify-center gap-6">
+            <a
+  href="https://wa.me/917983796831?text=Hello,%20I’m%20interested%20in%20your%20resume%20and%20would%20like%20to%20know%20more%20about%20your%20skills%20and%20experience."
+  target="_blank"
+  rel="noopener noreferrer"
+>
             <Button 
               variant="hero"
               size="lg" 
               className="px-8 py-3 text-lg"
-              as="a"
-              href="https://wa.me/919876543210"
-  target="_blank"
-  rel="noopener noreferrer"
             >
               Hire Me
             </Button>
-            
+            </a>
+
             <Button 
               variant="neon" 
               size="lg" 
