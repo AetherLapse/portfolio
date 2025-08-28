@@ -17,8 +17,8 @@ const AboutSection = () => {
     { name: 'CSS3', icon: '🎨' },
     { name: 'JavaScript', icon: '⚡' },
     { name: 'React', icon: '⚛️' },
-    { name: 'GSAP', icon: '🚀' },
-    { name: 'Three.js', icon: '🌟' }
+    { name: 'Python', icon: '🐍' },
+    { name: 'Express.JS', icon: '🌐' }
   ];
 
   useEffect(() => {
