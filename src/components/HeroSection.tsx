@@ -127,6 +127,10 @@ const HeroSection = () => {
               variant="hero"
               size="lg" 
               className="px-8 py-3 text-lg"
+              as="a"
+              href="https://wa.me/919876543210"
+  target="_blank"
+  rel="noopener noreferrer"
             >
               Hire Me
             </Button>
