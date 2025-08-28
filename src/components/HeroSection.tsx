@@ -1,7 +1,10 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
+
+gsap.registerPlugin(ScrollToPlugin);
 
 const HeroSection = () => {
   const heroRef = useRef<HTMLElement>(null);
@@ -132,6 +135,13 @@ const HeroSection = () => {
               variant="neon" 
               size="lg" 
               className="px-8 py-3 text-lg"
+              onClick={() => {
+              gsap.to(window, {
+              duration: 1,
+              scrollTo: "#projects", // 👈 Scrolls to ProjectsSection
+              ease: "power2.inOut",
+              });
+              }}
             >
               View My Work
             </Button>
