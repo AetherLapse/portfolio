@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Github, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
+import { FaInstagram, FaDiscord } from "react-icons/fa"; 
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -75,19 +76,19 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "hello@Vinayak.dev",
-      href: "mailto:hello@Vinayak.dev"
+      value: "vinayakrajx@gmail.com",
+      href: "mailto:vinayakrajx@gmail.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+91 9286128202",
+      href: "tel:+91 9286128202"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Uttar Pradesh, India",
       href: "#"
     }
   ];
@@ -102,7 +103,17 @@ const ContactSection = () => {
       icon: Linkedin,
       label: "LinkedIn",
       href: "https://linkedin.com/in/vinayak-raj-seo"
-    }
+    },
+  {
+    icon: FaInstagram,
+    label: "Instagram",
+    href: "https://instagram.com/vinayak_rajx", // replace with your profile
+  },
+  {
+    icon: FaDiscord,
+    label: "Discord",
+    href: "https://discord.com/users/irunyx", // replace with your Discord user link
+  },
   ];
 
   return (
