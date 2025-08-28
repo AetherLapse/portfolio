@@ -72,19 +72,20 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section ref={heroRef} id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section ref={heroRef} id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden cursor-default">
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-hero opacity-50" />
       
       {/* Spline 3D Background */}
-      <div ref={splineRef} className="absolute inset-0 z-0">
+      <div ref={splineRef} className="absolute inset-0 z-0 cursor-none">
         <iframe 
           src='https://my.spline.design/orb-Vs0EwfjuaSSmzwfH6s21CdEG/' 
           frameBorder='0' 
           width='100%' 
           height='100%'
-          className="pointer-events-none"
+          className="pointer-events-none cursor-none"
           loading="lazy"
+          style={{ cursor: 'none' }}
         />
       </div>
 
