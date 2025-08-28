@@ -84,6 +84,7 @@ const HeroSection = () => {
           width='100%' 
           height='100%'
           className="pointer-events-none"
+          loading="lazy"
         />
       </div>
 
@@ -103,10 +104,10 @@ const HeroSection = () => {
             className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight"
           >
             Hi, I'm{' '}
-            <span className="cyber-text">Milad</span>
+            <span className="cyber-text">Vinayak</span>
             <br />
             <span className="text-3xl md:text-5xl lg:text-6xl font-light text-muted-foreground">
-              Web Developer
+              Web Developer and Designer
             </span>
           </h1>
           

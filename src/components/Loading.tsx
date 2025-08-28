@@ -54,7 +54,7 @@ const Loading = ({ onComplete }: LoadingProps) => {
       <div className="flex flex-col items-center space-y-8">
         <div ref={logoRef} className="text-center">
           <h1 className="text-6xl md:text-8xl font-bold cyber-text mb-4">
-            Milad
+            Vinayak
           </h1>
           <p className="text-xl text-muted-foreground">Loading Experience...</p>
         </div>
