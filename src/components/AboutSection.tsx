@@ -137,14 +137,10 @@ const AboutSection = () => {
                 About <span className="cyber-text">Me</span>
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                I'm a passionate web developer with a keen eye for detail and a love for creating 
-                immersive digital experiences. I specialize in modern web technologies and have a 
-                particular interest in 3D web development and interactive animations.
+                I'm a passionate web developer and AI enthusiast with a focus on building modern, responsive web applications and intelligent systems. I enjoy working at the intersection of AI, machine learning, and web technologies, creating everything from predictive models to interactive applications that solve real-world problems.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                When I'm not coding, you'll find me exploring the latest in web animation, 
-                experimenting with new frameworks, or working on creative side projects that 
-                push the boundaries of what's possible on the web.
+                My work often involves developing APIs, experimenting with datasets, and exploring new frameworks to push the boundaries of what's possible on the web.
               </p>
             </div>
 
