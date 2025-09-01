@@ -3,6 +3,7 @@ import { gsap } from 'gsap';
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
+import Typewriter from "typewriter-effect";
 
 gsap.registerPlugin(ScrollToPlugin);
 

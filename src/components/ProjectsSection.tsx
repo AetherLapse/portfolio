@@ -6,6 +6,9 @@ import { ExternalLink, Github } from 'lucide-react';
 import project1 from '@/assets/project-1.jpg';
 import project2 from '@/assets/project-2.jpg';
 import project3 from '@/assets/project-3.jpg';
+import project4 from '@/assets/project-4.jpg';
+import project5 from '@/assets/project-5.jpg';
+import project6 from '@/assets/project-6.jpg';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -16,55 +19,55 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: "3D Interactive Web",
-      description: "Modern web experience with immersive 3D elements and smooth animations.",
+      title: "Text Editor App",
+      description: "A modern text editor with real-time collaboration and markdown support.",
       image: project1,
-      tech: ["React", "Three.js", "GSAP", "TypeScript"],
+      tech: ["Python", "Tkinter"],
       liveUrl: "#",
-      githubUrl: "#"
+      githubUrl: "https://github.com/AetherLapse/Lightweight-Text-Editor"
     },
     {
       id: 2,
-      title: "Gaming Platform",
-      description: "Next-level gaming website with neon effects and interactive components.",
+      title: "School Lead Management System",
+      description: "A comprehensive system to manage and track school leads effectively.",
       image: project2,
-      tech: ["Vue.js", "WebGL", "Node.js", "Socket.io"],
+      tech: ["AJAX", "PHP", "MySQL", "XAMPP"],
       liveUrl: "#",
-      githubUrl: "#"
+      githubUrl: "https://github.com/AetherLapse/School-Lead-Management"
     },
     {
       id: 3,
-      title: "Animation Portfolio",
-      description: "Creative showcase featuring advanced web animations and transitions.",
+      title: "HealthBot AI",
+      description: "An AI-powered chatbot for health consultations and symptom checking.",
       image: project3,
-      tech: ["React", "GSAP", "Framer Motion", "CSS"],
+      tech: ["Python", "Pandas / NumPy", "Scikit-learn", "FastAPI", "Ngrok"],
       liveUrl: "#",
-      githubUrl: "#"
+      githubUrl: "https://github.com/AetherLapse/healthbotv1"
     },
     {
       id: 4,
-      title: "E-commerce Platform",
-      description: "Modern online store with seamless user experience and payment integration.",
-      image: project1,
-      tech: ["Next.js", "Stripe", "MongoDB", "Tailwind"],
+      title: "Resume Analyzer with AI",
+      description: "AI-driven resume analysis tool to optimize job applications.",
+      image: project4,
+      tech: ["Python", "FastAPI", "Ngrok", "React", "spaCy"],
       liveUrl: "#",
       githubUrl: "#"
     },
     {
       id: 5,
-      title: "AI Dashboard",
-      description: "Data visualization dashboard with machine learning insights.",
-      image: project2,
-      tech: ["React", "D3.js", "Python", "FastAPI"],
+      title: "Personal Finance Tracker",
+      description: "A web app to track expenses, budgets, and financial goals.",
+      image: project5,
+      tech: ["React", "SQL", "Python", "FastAPI", "Firebase"],
       liveUrl: "#",
       githubUrl: "#"
     },
     {
       id: 6,
-      title: "Mobile App",
-      description: "Cross-platform mobile application with native performance.",
-      image: project3,
-      tech: ["React Native", "Expo", "Firebase", "Redux"],
+      title: "Smart To-Do with AI Suggestions",
+      description: "An intelligent to-do app that provides task suggestions based on user habits.",
+      image: project6,
+      tech: ["React", "ML", "Firebase", "FastAPI", "Ngrok"],
       liveUrl: "#",
       githubUrl: "#"
     }
