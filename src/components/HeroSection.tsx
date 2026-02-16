@@ -112,7 +112,7 @@ const HeroSection = () => {
             <span className="cyber-text">Vinayak</span>
             <br />
             <span className="text-3xl md:text-5xl lg:text-6xl font-light text-muted-foreground">
-              Web Developer and Designer
+              Custom Web Development & Workflow Automation
             </span>
           </h1>
           
