@@ -98,6 +98,26 @@
         ::-webkit-scrollbar-track { background: #000; }
         ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: #555; }
+
+        /* Process Node Active State */
+        .process-step.active .step-card {
+            border-color: rgba(139, 92, 246, 0.5); /* Violet-500/50 */
+            background: rgba(255, 255, 255, 0.05);
+            opacity: 1;
+        }
+        .process-step.active .step-node {
+            background-color: #8b5cf6; /* Violet-500 */
+            border-color: #8b5cf6;
+            transform: translate(-50%, 0) scale(1.2);
+            box-shadow: 0 0 15px rgba(139, 92, 246, 0.5);
+        }
+        .process-step {
+            opacity: 0.3;
+            transition: opacity 0.5s ease;
+        }
+        .process-step.active {
+            opacity: 1;
+        }
     </style>
 </head>
 <body>
@@ -286,8 +306,8 @@
     <!-- Tech Stack -->
     <section id="stack" class="py-24 bg-neutral-950 border-t border-white/5">
         <div class="container mx-auto px-6">
-            <div class="grid lg:grid-cols-2 gap-16">
-                <div>
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
+                <div class="lg:sticky lg:top-32">
                     <h2 class="text-4xl font-black text-white uppercase tracking-tight mb-4 font-display">Production Tech Stack</h2>
                     <p class="text-gray-400 text-lg leading-relaxed mb-8 font-body">
                         I optimize frameworks for velocity and scale. I don't just use these tools; I push them to their limits in production environments.
@@ -310,18 +330,33 @@
         </div>
     </section>
 
-    <!-- Process Section -->
+    <!-- Process Section (UPDATED) -->
     <section id="process" class="py-32 bg-black relative border-t border-white/5">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <span class="text-violet-400 uppercase tracking-[0.2em] text-xs font-bold font-display">Seamless Journey</span>
-                <h2 class="text-4xl md:text-6xl font-black text-white uppercase tracking-tight font-display mt-4">Let's Build Together</h2>
-            </div>
-            <div class="max-w-4xl mx-auto relative">
-                <div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-violet-500/0 via-violet-500/50 to-violet-500/0 md:-translate-x-1/2"></div>
-                <div id="process-steps" class="space-y-12 relative z-10">
-                    <!-- Process Steps Rendered via JS -->
+            <div class="grid lg:grid-cols-2 gap-16">
+                
+                <!-- Left: Sticky Heading -->
+                <div class="lg:sticky lg:top-32 h-fit self-start">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="h-[1px] w-8 bg-violet-500"></div>
+                        <span class="text-violet-400 uppercase tracking-[0.2em] text-xs font-bold font-display">Seamless Journey</span>
+                    </div>
+                    <h2 class="text-4xl md:text-6xl font-black text-white uppercase tracking-tight font-display mt-4 mb-8">Let's Build Together</h2>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-8 max-w-md font-body">
+                        From the first line of code to the final deployment, I provide a transparent, agile process ensuring we hit every milestone.
+                    </p>
+                    <a href="#contact" class="hidden lg:inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-white border-b border-violet-500 pb-1 hover:text-violet-400 transition-colors">
+                        Start Your Project <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
                 </div>
+
+                <!-- Right: Scrolling Steps (Node Scrolling) -->
+                <div id="process-steps" class="space-y-24 relative pl-4 lg:pl-0">
+                    <!-- Vertical Line -->
+                    <div class="absolute left-4 lg:left-8 top-0 bottom-0 w-px bg-white/10"></div>
+                    <!-- Steps Rendered via JS -->
+                </div>
+
             </div>
         </div>
     </section>
@@ -452,12 +487,12 @@
         };
 
         const journeySteps = [
-            { title: "Book Discovery Call", duration: "30 Minutes", icon: 'calendar', desc: "We discuss your vision, constraints, and goals. I provide an initial technical feasibility assessment.", color: "border-cyan-500/30" },
-            { title: "Receive Proposal", duration: "48-72 Hours", icon: 'file-text', desc: "Detailed technical architecture, timeline, milestones, and transparent cost breakdown.", color: "border-violet-500/30" },
-            { title: "Kickoff & Sprint 1", duration: "Week 1", icon: 'rocket', desc: "Project setup, repository creation, and first code commits. You get access to the live progress dashboard.", color: "border-emerald-500/30" },
-            { title: "Iterative Build", duration: "2-12 Weeks", icon: 'code', desc: "Development sprints with weekly demos. You see working features every Friday, not just mockups.", color: "border-blue-500/30" },
-            { title: "Testing & Launch", duration: "Launch Day", icon: 'party-popper', desc: "Rigorous QA, security audit, and production deployment. Full handover with documentation.", color: "border-pink-500/30" },
-            { title: "Priority Support", duration: "30 Days Free", icon: 'life-buoy', desc: "Monitoring, bug fixes, and performance tuning to ensure a flawless launch period.", color: "border-orange-500/30" }
+            { title: "Book Discovery Call", duration: "30 Minutes", icon: 'calendar', desc: "We discuss your vision, constraints, and goals. I provide an initial technical feasibility assessment.", color: "border-cyan-500" },
+            { title: "Receive Proposal", duration: "48-72 Hours", icon: 'file-text', desc: "Detailed technical architecture, timeline, milestones, and transparent cost breakdown.", color: "border-violet-500" },
+            { title: "Kickoff & Sprint 1", duration: "Week 1", icon: 'rocket', desc: "Project setup, repository creation, and first code commits. You get access to the live progress dashboard.", color: "border-emerald-500" },
+            { title: "Iterative Build", duration: "2-12 Weeks", icon: 'code', desc: "Development sprints with weekly demos. You see working features every Friday, not just mockups.", color: "border-blue-500" },
+            { title: "Testing & Launch", duration: "Launch Day", icon: 'party-popper', desc: "Rigorous QA, security audit, and production deployment. Full handover with documentation.", color: "border-pink-500" },
+            { title: "Priority Support", duration: "30 Days Free", icon: 'life-buoy', desc: "Monitoring, bug fixes, and performance tuning to ensure a flawless launch period.", color: "border-orange-500" }
         ];
 
         const testimonials = [
@@ -543,34 +578,65 @@
             });
         }
 
+        // --- UPDATED PROCESS RENDER (Node Scrolling) ---
         function renderProcess() {
             const container = document.getElementById('process-steps');
+            const line = container.querySelector('.absolute'); // Keep the line
+            
+            // Clear existing steps but keep the line
+            while (container.lastElementChild && container.lastElementChild !== line) {
+                container.removeChild(container.lastElementChild);
+            }
+
             journeySteps.forEach((step, index) => {
-                const isEven = index % 2 === 0;
-                container.innerHTML += `
-                    <div class="flex flex-col md:flex-row items-center gap-8 ${isEven ? 'md:flex-row-reverse' : ''}">
-                        <div class="flex-1 w-full">
-                            <div class="tilt-card transform-style-3d">
-                                <div class="glass-panel p-8 border-l-2 ${step.color.replace('border-', 'border-l-')}">
-                                    <div class="flex justify-between items-start mb-4">
-                                        <div class="p-3 bg-white/5 rounded-lg border ${step.color}">
-                                            <i data-lucide="${step.icon}" class="w-6 h-6 text-white"></i>
-                                        </div>
-                                        <span class="px-3 py-1 bg-white/5 rounded-full text-[10px] font-bold uppercase tracking-widest text-gray-400 font-display">${step.duration}</span>
-                                    </div>
-                                    <h3 class="text-xl font-bold text-white mb-2 font-display">${step.title}</h3>
-                                    <p class="text-gray-400 text-sm font-body leading-relaxed">${step.desc}</p>
+                // Determine border color for card
+                const borderColorClass = step.color.startsWith('border') ? step.color : 'border-white/10';
+
+                const stepHTML = `
+                    <div class="process-step relative pl-16 lg:pl-24 group" data-index="${index}">
+                        <!-- Node/Dot -->
+                        <div class="step-node absolute left-4 lg:left-8 top-12 w-3 h-3 -translate-x-1/2 bg-black border border-white/50 rounded-full z-10 transition-all duration-500"></div>
+                        
+                        <!-- Content Card -->
+                        <div class="step-card glass-panel p-8 border-l-2 ${borderColorClass} transition-all duration-500">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="p-2 bg-white/5 rounded-lg">
+                                    <i data-lucide="${step.icon}" class="w-5 h-5 text-white"></i>
                                 </div>
+                                <span class="text-[10px] font-bold uppercase tracking-widest text-gray-400 font-display">${step.duration}</span>
                             </div>
+                            <h3 class="text-xl font-bold text-white mb-2 font-display">${step.title}</h3>
+                            <p class="text-gray-400 text-sm font-body leading-relaxed">${step.desc}</p>
                         </div>
-                        <div class="w-8 h-8 rounded-full bg-black border-2 border-violet-500 z-10 flex items-center justify-center shrink-0">
-                            <div class="w-2 h-2 bg-white rounded-full"></div>
-                        </div>
-                        <div class="flex-1 hidden md:block"></div>
                     </div>
                 `;
+                container.insertAdjacentHTML('beforeend', stepHTML);
             });
+
+            initProcessObserver();
         }
+
+        function initProcessObserver() {
+            const steps = document.querySelectorAll('.process-step');
+            const observerOptions = {
+                root: null,
+                rootMargin: '-40% 0px -40% 0px', // Active when element is in middle 20% of screen
+                threshold: 0
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    } else {
+                        entry.target.classList.remove('active');
+                    }
+                });
+            }, observerOptions);
+
+            steps.forEach(step => observer.observe(step));
+        }
+
 
         function renderTestimonials() {
             const grid = document.getElementById('testimonials-grid');
@@ -614,17 +680,20 @@
             document.querySelectorAll('.faq-btn').forEach(btn => {
                 btn.addEventListener('click', () => {
                     const content = btn.nextElementSibling;
-                    const icon = btn.querySelector('i');
+                    // FIX: Lucide replaces <i> with <svg>, so we query for svg or fallback to i
+                    const icon = btn.querySelector('svg') || btn.querySelector('i'); 
                     const isOpen = content.style.maxHeight;
 
                     // Close all others
                     document.querySelectorAll('.faq-content').forEach(c => { c.style.maxHeight = null; c.style.opacity = '0'; });
-                    document.querySelectorAll('.faq-btn i').forEach(i => i.style.transform = 'rotate(0deg)');
+                    // FIX: Select svgs for rotation reset
+                    document.querySelectorAll('.faq-btn svg').forEach(i => i.style.transform = 'rotate(0deg)');
+                    document.querySelectorAll('.faq-btn i').forEach(i => i.style.transform = 'rotate(0deg)'); // Fallback
 
                     if (!isOpen) {
                         content.style.maxHeight = content.scrollHeight + "px";
                         content.style.opacity = '1';
-                        icon.style.transform = 'rotate(180deg)';
+                        if (icon) icon.style.transform = 'rotate(180deg)';
                     }
                 });
             });
